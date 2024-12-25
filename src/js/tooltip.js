@@ -3,7 +3,7 @@ export default class Tooltip{
         this.tooltips = [];
     }
 
-    showTooltip(messageTooltip, titleTooltip, element){
+    showTooltip(messageTooltip, titleTooltip){
         const tooltipContainer = document.createElement('div');
         const tooltipTitle = document.createElement('div');
         const tooltipMessage = document.createElement('div');

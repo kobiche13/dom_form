@@ -5,11 +5,11 @@ const btn = document.querySelector('.btn-popover')
 let checkTooltipActivate = undefined;
 
 
-btn.addEventListener('click', function(event){
+btn.addEventListener('click', ( ) => {
     
     if (checkTooltipActivate == undefined){
         const checkTooltip = new Tooltip();
-        checkTooltip.showTooltip('And here`s some amazing content. It`s very engaging. Ready?', 'Popover title', btn)
+        checkTooltip.showTooltip('And here`s some amazing content. It`s very engaging. Ready?', 'Popover title')
         checkTooltipActivate = document.querySelector('.popover-tooltip')
     } else {
         checkTooltipActivate.remove();
